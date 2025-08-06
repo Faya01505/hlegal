@@ -55,7 +55,7 @@
 
 
         @media screen and (max-width: 767px) {
-            background-color: #fff;
+            
 
             a,
             address,
@@ -64,10 +64,7 @@
                 color: #000000;
             }
 
-            .langs a:not(.active) {
-                color: #000;
-            }
-
+           
             .mobile-hidden {
                 display: none;
                 font-weight: 700;
@@ -99,6 +96,9 @@
     @media screen and (max-width: 1024px) {
         .header__topline {
             gap: 10px;
+            width: 100%;
+            justify-content: space-between;
+            // background-color: rgba(245, 245, 250, 0.2);
         }
     }
 }
@@ -213,7 +213,7 @@
         span {
             display: block;
             height: 3px;
-            background: #323264;
+            background: #ffffff;
             margin: 4px 0;
             transition: 0.3s;
         }
@@ -264,7 +264,7 @@
 
 @media screen and (max-width: 1024px) {
     .header__container {
-        padding: 30px;
+        padding: 0 0 20px;
     }
 
     .header__page-active {
@@ -282,16 +282,12 @@
 
 @media screen and (max-width: 767px) {
     .header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-
-        z-index: 1100;
+        
 
         &__container {
-            padding: 20px;
+            
             justify-content: space-between;
+            padding: 0 0 20px;
         }
 
         &__page-active {
@@ -329,7 +325,7 @@
     }
 
     .nav__icon {
-        top: 15px;
+        top: 30px;
         right: 15px;
     }
 
@@ -337,10 +333,10 @@
 
 .header__logo {
     content: url('/src/img/logo.svg');
+    order: 2;
+    margin-right: auto;
 
-    @media screen and (max-width: 767px) {
-        content: url('/src/img/logo.white.bgsvg.svg');
-    }
+   
 }
 
 

@@ -6,7 +6,7 @@
         display: flex;
         max-width: 1200px;
         margin: 0 auto;
-        align-items: flex-start;
+        
 
         @media screen and (max-width: 768px) {
             flex-direction: column;
@@ -83,6 +83,8 @@
     &__content {
         flex: 1;
         padding-left: 30px;
+        display: flex;
+        align-items: center;
 
         @media screen and (max-width: 768px) {
             padding-left: 0;
@@ -93,7 +95,7 @@
     &__panel {
         display: none;
         
-        padding-top: 50px;
+        
         
         @media screen and (max-width: 768px) {
             margin-top: 10px;
